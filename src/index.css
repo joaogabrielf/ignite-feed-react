@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-content;
+  }
+
+  :focus-visible{
+    @apply outline-transparent;
+  }
+
+  body {
+    @apply bg-gray-900;
+    @apply text-gray-300;
+    @apply antialiased;
+  }
+
+  body,
+  input,
+  textarea,
+  button {
+    @apply font-roboto;
+    @apply font-normal;
+    @apply text-base;
+  }
+}
